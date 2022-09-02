@@ -33,6 +33,8 @@ const manager = TokenizerManager.activate();
 type SimpleToken = {
   surface: string;
   pos: string;
+  basic_form: string;
+  reading: string;
 };
 
 export class Analyzer {
