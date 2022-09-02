@@ -43,7 +43,9 @@ export class Analyzer {
       .tokenize(sentence)
       .map((wo: {surface_form: string; pos: string;}) => ({
         surface: wo.surface_form,
-        pos: wo.pos
+        pos: wo.pos,
+        basic_form: wo.basic_form,
+        reading: wo.reading
       }))
     );
   }
