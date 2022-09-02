@@ -43,7 +43,7 @@ export class Analyzer {
     .then(tokenizer =>
       tokenizer
       .tokenize(sentence)
-      .map((wo: SimpleToken) => ({
+      .map((wo: {surface_form: string; pos: string; basic_reading: string; reading: string;}) => ({
         surface: wo.surface_form,
         pos: wo.pos,
         basic_form: wo.basic_form,
